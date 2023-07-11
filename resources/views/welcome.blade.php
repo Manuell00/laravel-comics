@@ -16,6 +16,13 @@
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="container">
+
+            <!-- Includo l'header -->
+            @include('components.header')
+        </div>
+    </div>
     <h1>ciao</h1>
 
 </body>

@@ -1,0 +1,59 @@
+header {
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .header-image-container {
+        width: 80px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .header-menu {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 25px;
+        list-style-type: none;
+        height: 100%;
+
+
+        .header-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .blue {
+                background-color: $primary;
+                position: absolute;
+                height: 8px;
+                width: 100%;
+                bottom: 0;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            a {
+                font-weight: 700;
+                color: black;
+            }
+
+            &:hover .blue {
+                opacity: 1;
+
+            }
+        }
+    }
+}
