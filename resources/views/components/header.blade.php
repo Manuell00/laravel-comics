@@ -1,4 +1,8 @@
 <!-- TEMPLATE -->
+<div class="blue-line">
+    <span>DC POWER VS©</span>
+    <span>ADDITIONAL SERIES </span>
+</div>
 <header>
     <div class="header-image-container"><img src="{{ Vite::asset('resources/images/dc-logo.png') }}"></div>
     <ul class="header-menu">
