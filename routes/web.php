@@ -231,9 +231,9 @@ $fumetti = [
 // Inserisco la route di base a cui collego la pagina home
 Route::get('/', function () use ($fumetti) {
     return view('home', compact('fumetti'));
-});
+})->name('home');
 
 // Inserisco la pagina about nella route about
 Route::get('/about', function () use ($fumetti) {
     return view('about', compact('fumetti'));
-});
+})->name('about');

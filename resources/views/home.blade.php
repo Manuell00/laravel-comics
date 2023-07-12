@@ -26,7 +26,13 @@ home
         @foreach($fumetti as $fumetto)
 
         <div class="card">
-            <h2>{{$fumetto['title']}}</h2>
+
+            <!-- Inserisco il collegamento alla route al click del tag a -->
+            <a href="{{ route('about') }}" class="text-decoration-none">
+                <h3 class="bg-dark text-light">
+                    {{ $fumetto['title'] }}
+                </h3>
+            </a>
 
             <p>{{$fumetto['description']}}</p>
 

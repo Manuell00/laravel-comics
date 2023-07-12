@@ -8,11 +8,11 @@
 
          <div class="social">
              <span>FOLLOW US</span>
-             <img src="../../public/img/footer-facebook.png" alt="Facebok">
-             <img src="../../public/img/footer-twitter.png" alt="Twitter">
-             <img src="../../public/img/footer-youtube.png" alt="YouTube">
-             <img src="../../public/img/footer-pinterest.png" alt="Pinterest">
-             <img src="../../public/img/footer-periscope.png" alt="Periscope">
+             <img src="{{ Vite::asset('resources/img/footer-facebook.png') }}">
+             <img src="{{ Vite::asset('resources/img/footer-twitter.png') }}">
+             <img src="{{ Vite::asset('resources/img/footer-youtube.png') }}">
+             <img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}">
+             <img src="{{ Vite::asset('resources/img/footer-periscope.png') }}">
          </div>
      </div>
  </footer>
