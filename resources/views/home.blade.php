@@ -10,7 +10,8 @@ home
 
 
 <!-- Nel segnaposto 'jumbotron' -->
-@section('title')
+@section('jumbotron')
+
 <!-- Definisco il Jumbotron -->
 <div id="jumbotron">
     <div class="bg-container">
@@ -19,10 +20,29 @@ home
     </div>
 
     <!-- Definisco il contenitore delle cards -->
-    <div class="cards-container">
+    <div class="container">
 
+        <!-- Ciclo i dati passati nella routes -->
         @foreach($fumetti as $fumetto)
-        {{$fumetto['title']}}
+
+        <div class="card">
+            <h2>{{$fumetto['title']}}</h2>
+
+            <p>{{$fumetto['description']}}</p>
+
+            <div>
+                <span>Prezzo: </span><b>{{$fumetto['price']}}</b>
+            </div>
+
+            <h5>Lista degli artisti : </h5>
+            <ul>
+                @foreach($fumetto['artists'] as $artist)
+                <li> {{$artist}}</li>
+                @endforeach
+            </ul>
+
+        </div>
+
 
         @endforeach
 
