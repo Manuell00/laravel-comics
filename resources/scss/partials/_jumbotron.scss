@@ -1,0 +1,64 @@
+#jumbotron {
+    width: 100%;
+    height: auto;
+
+
+    .bg-container {
+        height: 400px;
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        #current-series {
+            padding: 10px 20px;
+            color: white;
+            background-color: $primary;
+            font-size: 26px;
+            font-weight: 800;
+            position: absolute;
+            bottom: -20px;
+            left: 15%;
+        }
+    }
+
+    .cards-container {
+        padding: 20px 15%;
+        background-color: black;
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        #load {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+
+
+            #load-button {
+                color: white;
+                font-weight: 700;
+                background-color: $primary;
+                padding: 5px 45px;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    box-shadow: 2px 4px white;
+                    padding: 10px 45px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

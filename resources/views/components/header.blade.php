@@ -1,10 +1,13 @@
 <!-- TEMPLATE -->
 <div class="blue-line">
-    <span>DC POWER VS©</span>
-    <span>ADDITIONAL SERIES </span>
+    <div class="container">
+        <span>DC POWER VS©</span>
+        <span>ADDITIONAL SERIES </span>
+    </div>
 </div>
+
 <header>
-    <div class="header-image-container"><img src="{{ Vite::asset('resources/images/dc-logo.png') }}"></div>
+    <div class="header-image-container"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}"></div>
     <ul class="header-menu">
         <li class="header-item"><a href="#">CHARACTERS</a>
             <div class="blue"></div>

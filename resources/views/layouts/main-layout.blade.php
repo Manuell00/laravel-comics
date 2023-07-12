@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Inserisco un segnaposto per la pagina principale -->
-    <title>@yield('title')</title>
+    <title>Comics : @yield('title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,11 +19,17 @@
 
 <body>
     <div class="container-fluid">
-        <div class="container ">
 
-            <!-- Includo l'header -->
-            @include('components.header')
-        </div>
+        <!-- Includo l'header -->
+        @include('components.header')
+
+
+        <!-- Segnaposto per il jumbtron che variera a seconda della page -->
+        @yield('jumbotron')
+
+        <!-- Includo il footer -->
+        @include ('components.footer')
+
     </div>
 
 
